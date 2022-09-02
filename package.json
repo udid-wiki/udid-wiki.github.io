@@ -1,0 +1,36 @@
+{
+  "name": "udid-wiki",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs": "docsify serve docs -p 64725 -P 64355",
+    "build:css": "sass styles/index.scss docs/static/css/main.css",
+    "build:lib": "./node_modules/.bin/babel src/marked-ext.js --out-file docs/lib/udid-marked.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@tim:udidp/doc-wiki.git"
+  },
+  "keywords": [
+    "DID",
+    "Web3.0"
+  ],
+  "author": "victoria tsai",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+    "@babel/preset-env": "^7.18.10",
+    "babel-preset-stage-1": "^6.24.1",
+    "docsify-cli": "^4.4.4",
+    "eslint": "^8.22.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.5"
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UDID | Unified Decentralization Identity Wiki</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="DID Web3.0 Blockchain Ethereum" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="author" content="Victoria tsai" />
+    <meta name="keywords" content="Blockchain,DID,Web3.0,Domain onchain" />
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+    <link rel="stylesheet" href="./static/css/main.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="lib/udid-marked.js"></script>
+    <script>
+      window.$docsify = {
+        name: 'Unified Decentralization Identity Wiki',
+        repo: '',
+        formatUpdated: '{YYYY}-{MM}-{DD}',
+        loadNavbar: true,
+        coverpage: true,
+        loadSidebar: true,
+        search: {
+          placeholder: 'Search...',
+        },
+        auto2top: true,
+        logo: './navbar-icon.svg',
+        topMargin: 0,
+        notFoundPage: true,
+        subMaxLevel: 3,
+        themeColor: 'rgb(0, 170, 91)',
+        alias: {
+          '/en/_sidebar.md': '/_sidebar.md', // See #301
+          '/.*/_navbar.md': '/_navbar.md', // See #301
+        },
+        plugins: [],
+        copyCode: {
+          buttonText: {
+            '/en/': 'Copy to clipboard',
+          },
+          errorText: 'Error',
+          successText: 'Copied',
+        },
+        tabs: {
+          persist: true, // default
+          sync: true, // default
+          theme: 'material', // default :classic
+          tabComments: true, // default
+          tabHeadings: true, // default
+        },
+        markdown: function (marked, renderer) {
+          // ...
+          console.log('>>>>>', renderer, renderer.strong);
+          if (typeof window.extStrong === 'function') {
+            renderer.strong = window.extStrong;
+          }
+          marked.use({ renderer });
+          return marked;
+        },
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-prism@latest/dist/docsify-prism.min.js"></script> -->
+    <script src="//unpkg.com/prismjs/components/prism-markup.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-cpp.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-protobuf.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-solidity.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  </body>
+</html>

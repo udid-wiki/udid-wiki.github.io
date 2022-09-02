@@ -1,0 +1,65 @@
+@import './variables.scss';
+
+.sidebar {
+  padding: 0 0 0 0;
+}
+.app-name {
+  padding-top: 10px;
+  border-bottom: 4px solid #{$primary-color};
+  background-color: rgb(51, 51, 51);
+}
+
+.cover {
+  &-main {
+    h3,
+    h2,
+    h1,
+    h4 {
+      .anchor span {
+        color: #fff;
+      }
+    }
+
+    h2 a {
+      color: #{$primary-color};
+    }
+  }
+  &-logo {
+    & > img {
+      width: 288px;
+      height: 288px;
+    }
+  }
+
+  &-video {
+    position: absolute;
+    translate: 50% 50%;
+    z-index: 0;
+    max-width: 100%;
+  }
+}
+
+.content {
+  &-title {
+    font-size: 2.175rem;
+  }
+}
+
+strong.api-method {
+  font-size: 1.025rem;
+  padding: 4px 12px;
+  background-color: var(--theme-color, grey);
+  border-radius: 0px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+strong.nav-lang {
+  color: var(--theme-color, grey);
+}
+
+.app-nav {
+  .nav-bage {
+    color: #fff;
+  }
+}

@@ -11,5 +11,6 @@
   - [DID list API](en/api-did-list.md)
   - [Multisignature API](en/api-multisignature.md)
   - [PassCard NFT API](en/passcard-api.md)
+  - [DnsResolver API](en/dnsresolver.md)
 
 - [Contribution](en/contribution.md)

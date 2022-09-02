@@ -125,15 +125,13 @@
 
 <!-- tabs:start -->
 <!-- tab:API document -->
-- 1. coinbase : current connected address . [required]
-- 2. pageSize: Number [default 10]
-- 3. pageNumber : Number [default 1]
+- 1. pageSize: Number [default 10]
+- 2. pageNumber : Number [default 1]
 
 <!-- tab: JSON -->
 
 ```js
 {
-    coinbase:'0xAe..98c5',
     pageSize:10,
     pageNumber:1
 }

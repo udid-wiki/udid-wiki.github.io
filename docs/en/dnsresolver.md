@@ -193,99 +193,84 @@ https://dnsdao.udid.domains
 }
 ```
 
-[//]: # (----)
+----
 
-[//]: # (## 1. Signed for mint)
+## 1. Signed for mint
 
-[//]: # ()
-[//]: # (> 获取mint 签名)
 
-[//]: # ()
-[//]: # (- Request)
+> 获取mint 签名
 
-[//]: # ()
-[//]: # (**${.api-method} POST** /api/passcard/signed_mint)
 
-[//]: # ()
-[//]: # (<!-- tabs:start -->)
+- Request
 
-[//]: # ()
-[//]: # (<!-- tab:API document -->)
+
+**${.api-method} POST** /dns/passcard/signed_mint
+
+
+<!-- tabs:start -->
+
+
+<!-- tab:API document -->
 
 [//]: # (- 1. coinbase : current connected address . [required])
 
+[//]: # ()
 [//]: # (- 2. erc721Addr: Pass card contract address [required])
 
+[//]: # ()
 [//]: # (- 3. tokenId : Pass card ID [required])
 
+[//]: # ()
 [//]: # (- 4. domainhash: the did name sha256 [required])
 
+[//]: # ()
 [//]: # (- 5. years: [required])
 
+[//]: # ()
 [//]: # (- 6. erc20Addr: 支付token address [required])
 
-[//]: # ()
-[//]: # (<!-- tab: JSON -->)
+<!-- tab: JSON -->
 
-[//]: # ()
-[//]: # (```js)
 
-[//]: # ({)
+```js
 
-[//]: # (    coinbase:'0xAe..98c5',    // required)
+{
+  "token_id":"1",
+  "domain_name":"rickey.did",
+  "year":"2",
+  "erc_20_addr":"0x6043bfe64a866c7fb17D1855fe3eBC4342Ca9c15",
+  "price":"3000000000000000000000",
+  "msg_sender":"0x1BAA74579Eb2549eEdCE0012AB3A21ba425a265e",
+  "time_stamp":"1662350254",
+}
 
-[//]: # (    erc721Addr:'0xed...72Bb', // string )
+```
 
-[//]: # (    tokenId:2,                // number)
+<!-- tabs:end -->
 
-[//]: # (    domainhash:'xsxxxxss'     // 这里用hash 还是用 did name ?)
 
-[//]: # (    years:1,)
+- Response
 
-[//]: # (    erc20Addr: '0x00....00')
 
-[//]: # (})
+```js
 
-[//]: # (```)
+{
+  "code": 1,
+  "message": "ok",
+  "data": {
+  "signature": "d30896e3d787a7eec64e8c792063040093d5d3016666610310645a152b00a2ea4358f41b27009b6f362875d03f02a17d9110e23293e621ed240486ac6f3d46aa00",
+    "p_addr": "0x9c33ab7fa212a5e7956c0b40a3a07b83ae7242a9",
+    "params": {
+    "domain_name": "rickey.did",
+      "year": 2,
+      "erc_20_addr": "0x6043bfe64a866c7fb17d1855fe3ebc4342ca9c15",
+      "price": 3e+21, //这个不行我给返回个str吧
+      "msg_sender": "0x1baa74579eb2549eedce0012ab3a21ba425a265e",
+      "time_stamp": 1662350254
+  }
+}
+}
 
-[//]: # (<!-- tabs:end -->)
-
-[//]: # ()
-[//]: # (- Response)
-
-[//]: # ()
-[//]: # (```js)
-
-[//]: # ({)
-
-[//]: # (    code:1,  // 1 服务正常返回，0 服务端异常)
-
-[//]: # (    message:'ok',// 异常时 描述)
-
-[//]: # (    data:{  // 异常时 data null 或 无此字段)
-
-[//]: # (      signature:'0x...8ef', 签名后的字符串)
-
-[//]: # (      params:{  // 返回服务端签名参数， 有可能会对参数排序)
-
-[//]: # (        coinbase:'0xAe..98c5',    // required)
-
-[//]: # (        erc721Addr:'0xed...72Bb', // string )
-
-[//]: # (        tokenId:2,                // number)
-
-[//]: # (        domainhash:'xsxxxxss'     // 这里用hash 还是用 did name ?)
-
-[//]: # (        years:1,)
-
-[//]: # (        erc20Addr: '0x00....00')
-
-[//]: # (      })
-
-[//]: # (    })
-
-[//]: # (})
-
-[//]: # (```)
+```
 
 ----

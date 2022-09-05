@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "docs": "docsify serve docs -p 64725 -P 64355",
+    "docs": "docsify serve docs -p 64725 -P 64355 -o",
     "build:css": "sass styles/index.scss docs/static/css/main.css",
     "build:lib": "./node_modules/.bin/babel src/marked-ext.js --out-file docs/lib/udid-marked.js",
     "test": "echo \"Error: no test specified\" && exit 1"

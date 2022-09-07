@@ -228,20 +228,30 @@ https://dnsdao.udid.domains
 
 [//]: # ()
 [//]: # (- 6. erc20Addr: 支付token address [required])
+```js
 
+{
+  "token_id":"9999",
+  "domain_name":"cc.did",
+  "year":"2",
+  "erc_20_addr":"0x6043bfe64a866c7fb17D1855fe3eBC4342Ca9c15",
+  "price":"3000000000000000000000",
+  "msg_sender":"0x5DA2a8Ec74A62089c8678E9DB3EA6D3E8D265edE",
+}
+
+```
 <!-- tab: JSON -->
 
 
 ```js
 
 {
-  "token_id":"1",
-  "domain_name":"rickey.did",
+  "token_id":"9999",
+  "domain_name":"cc.did",
   "year":"2",
   "erc_20_addr":"0x6043bfe64a866c7fb17D1855fe3eBC4342Ca9c15",
   "price":"3000000000000000000000",
-  "msg_sender":"0x1BAA74579Eb2549eEdCE0012AB3A21ba425a265e",
-  "time_stamp":"1662350254",
+  "msg_sender":"0x5DA2a8Ec74A62089c8678E9DB3EA6D3E8D265edE",
 }
 
 ```
@@ -258,15 +268,14 @@ https://dnsdao.udid.domains
   "code": 1,
   "message": "ok",
   "data": {
-  "signature": "d30896e3d787a7eec64e8c792063040093d5d3016666610310645a152b00a2ea4358f41b27009b6f362875d03f02a17d9110e23293e621ed240486ac6f3d46aa00",
-    "p_addr": "0x9c33ab7fa212a5e7956c0b40a3a07b83ae7242a9",
+  "signature": "bf7d8c40693c3dc48e4029a1fe3d653f999340eb1b64b4f0cba13c0ca02792726f5c3255c364da385c18c17f8eff5cc3e8147d13fdf5222d78f991b87e84bdb91c",
     "params": {
-    "domain_name": "rickey.did",
+      "domain_name": "cc.did",
       "year": 2,
       "erc_20_addr": "0x6043bfe64a866c7fb17d1855fe3ebc4342ca9c15",
-      "price": 3e+21, //这个不行我给返回个str吧
-      "msg_sender": "0x1baa74579eb2549eedce0012ab3a21ba425a265e",
-      "time_stamp": 1662350254
+      "price": "3000000000000000000000",
+      "msg_sender": "0x5da2a8ec74a62089c8678e9db3ea6d3e8d265ede",
+      "token_id": 9999
   }
 }
 }

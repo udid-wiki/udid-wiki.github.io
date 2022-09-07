@@ -352,3 +352,39 @@ https://dnsdao.udid.domains
 }
 ```
 
+
+
+
+
+
+# DNSDAO OPENSEA
+
+## 1. Get Opensea metadata
+
+> 查询opensea元数据
+
+- Request
+
+**${.api-method} GET** /opensea/0xD792f2507Df03f7335b8AfC0527A4D239915ad47/2
+
+<!-- tabs:start -->
+
+<!-- tab:API document -->
+- 1. /0xD792f2507Df03f7335b8AfC0527A4D239915ad47 : contract addr . [required]
+- 2. /2  : tokenid [required]
+<!-- tab: JSON -->
+
+<!-- tabs:end -->
+
+- Response
+
+```js
+{
+  "name": "did",
+    "image": "https://dnsdaonftpasscard.s3.ap-east-1.amazonaws.com/dnsname/0xd792f2507df03f7335b8afc0527a4d239915ad47_2.png",
+    "external_url": "",
+    "animation_url": "",
+    "description": "Udid",
+}
+```
+

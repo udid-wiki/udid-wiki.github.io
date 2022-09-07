@@ -283,3 +283,72 @@ https://dnsdao.udid.domains
 ```
 
 ----
+
+
+
+# RESOLVER
+
+## 1. Get Domains info
+
+> 查询域名信息
+
+- Request
+
+**${.api-method} GET** /dns/name
+
+<!-- tabs:start -->
+
+<!-- tab:API document -->
+- 1. name : current connected name . [required]
+
+<!-- tab: JSON -->
+
+```js
+{
+    name:'eth.did', // required
+}
+```
+<!-- tabs:end -->
+
+- Response
+
+```js
+{
+  "name": "did",
+    "hash": "9cb4777bc61baeb5c84f2ed7e7dc586e5e21f1c1194bf295bc2430cbabe5eeae",
+    "contract": "0xff480a9dec20ad7e6627165c0316270b8e96ac15",
+    "sub_name": {
+    "1": [
+      "6.did"
+    ],
+      "2": [
+      "aa.did"
+    ],
+      "3": [
+      "eth.did"
+    ],
+      "4": [
+      "dsad.did"
+    ],
+      "7": [
+      "lanbery.did"
+    ]
+  },
+  "sub_name_count": {
+    "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "7": 1
+  },
+  "price": {
+    "default": 100000000000000000000
+  },
+  "owner": "0x5da2a8ec74a62089c8678e9db3ea6d3e8d265ede",
+    "open_to_reg": true,
+    "expireTime": 1694005208,
+    "token_id": 2,
+    "conf": null
+}
+```
+

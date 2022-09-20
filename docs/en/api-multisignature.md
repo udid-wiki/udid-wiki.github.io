@@ -18,7 +18,7 @@
 
 - Request
 
-**${.api-method} GET** /api/multisign/dids/get_todos
+**${.api-method} GET** /dns/multisign/dids/get_todos
 
 <!-- tabs:start -->
 
@@ -82,7 +82,7 @@
 
 - Request
 
-**${.api-method} POST** /api/multisign/tasks/get_list
+**${.api-method} POST** /dns/multisign/tasks/get_list
 
 <!-- tabs:start -->
 

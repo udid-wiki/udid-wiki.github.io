@@ -84,7 +84,7 @@
 
 - Request
 
-**${.api-method} POST** /dns/multisign/tasks/get_list
+**${.api-method} GET** /dns/multisign/tasks/get_list
 
 <!-- tabs:start -->
 

@@ -43,12 +43,17 @@
     message:'ok',// 异常时 描述
     data:{  // 异常时 data null 或 无此字段
         total:32,
+        "page_size": 100,
+        "page_number": 0,
         items:[
             {
                 name:"did",
-                erc721_addr:'0x67...98Fd', //
+                owner:'0x...865',
+                erc_721_addr:'0x67...98Fd', //
                 token_id:1,
-                balances:[
+                "work": false,
+                "erc_20_addr": "0x0000000000000000000000000000000000000000",
+                income:[
                   {
                     erc20_addr:'0x000...00', // eth address, required
                     withdraw_wei:'12000500000000000000000000',  // eth withdraw balance, wei  required
@@ -107,7 +112,8 @@
     message:'ok',// 异常时 描述
     data:{  // 异常时 data null 或 无此字段
       total:4,
-      pageNumber:0,
+      "page_size": 100,
+      "page_number": 0,
       items:[
         {
           namehash: '0x....abs',        //多签任务 对应域名 的 namehash,如 `did` hash   

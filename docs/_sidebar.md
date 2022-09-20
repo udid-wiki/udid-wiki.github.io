@@ -5,8 +5,6 @@
   - [UDID Genesis Pass Card](en/)
   - [DNS DAO](en/)
 
-
-
 - API documents
   - [DnsResolver API](en/dnsresolver.md)
 

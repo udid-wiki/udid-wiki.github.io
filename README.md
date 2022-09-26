@@ -1,5 +1,7 @@
 # UDID Wiki
 
+![[logo](https://udid-wiki.github.io/navbar-icon.svg)](https://udid-wiki.github.io/)
+
 ## Writing Wiki at locale
 
 - npm install docsify-cli --global  

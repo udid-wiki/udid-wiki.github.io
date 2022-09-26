@@ -1,6 +1,6 @@
 # UDID Wiki
 
-![[logo](https://udid-wiki.github.io/navbar-icon.svg)](https://udid-wiki.github.io/)
+![[logo](https://raw.githubusercontent.com/udid-wiki/udid-wiki.github.io/main/logo.svg)](https://udid-wiki.github.io/)
 
 ## Writing Wiki at locale
 

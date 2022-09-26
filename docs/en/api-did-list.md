@@ -125,7 +125,7 @@
 
 <!-- tabs:start -->
 <!-- tab:API document -->
-- 1. pageSize: Number [default 10]
+- 1. pageSize: Number [default 200]
 - 2. pageNumber : Number [default 1]
 
 <!-- tab: JSON -->
@@ -148,16 +148,16 @@
     message:'ok',// 异常时 描述
     data:{  // 异常时 data null 或 无此字段
         total:32,
-        pageSize:10,
+        pageSize:200,
         pageNumber:1,
         items:[
             {
-                name:"lanbery.udid",
+                name:"udid",
                 erc721_addr:'0x67...98Fd',// Top DID erc721addr [即 udid 的 erc721Addr]
                 token_id:1, //  tokenId
                 expire_time:219291131,
                 owner:'0x64....D865',
-                pay_tokens:['0x99d...dfed','0x00..00'], // 已开启的支付方式 ERC20 address 数组，未开启时 []或无此字段
+                usdt_prices:['300000000000','2000000000'] ,// 已开启的价格数组 数组，只有数组中有一个值 > 0 ,即视为，已开启二级注册。 UI 开启也是用此规则
 
             },
             ...

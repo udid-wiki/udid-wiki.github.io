@@ -223,7 +223,7 @@
 - Configuration Json 
 1. itemContent : . [required]  //json serialized from Configuration Item
 2. itemSig: . [required]    //signature which sign with value address of Configuration Item
-3. timeStamp: . [option]  //Configure Json expire time, 120 second is recommanded
+3. timeStamp: . [required]  //Configure Json expire time, 120 second is recommanded
 4. userAddr: . [required] //owner of did 
 5. operation: . [required] //value must be 4
 - Post Content

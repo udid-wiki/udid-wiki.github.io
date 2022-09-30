@@ -3,9 +3,13 @@
 <!-- span class="content-title"> Support Mapping Type</span -->
 # Support Mapping Type List
 
+- There are 5 interfaces in this section, which are used for the mapping of configuration names in the udid network; the 4th and 5th interfaces are written interfaces, and the owner of the name is required to update the mapping.
+- The reverse mapping does not make a unique judgment on the fourth interface, mainly because there is no way to know whether the configured address belongs to the user itself.
+- The fifth interface is used to solve the above problem. For the configured address, if the user can provide the signature of the configured address itself, the mapping configuration considers that the configuration has passed the authentication. For the application, the authenticated configuration must be used first.
+
 ## 1.Get all mapping type
 
-> 获取支持的映射类型
+> API: Get all mapping type 
 
 - Request
 
@@ -39,7 +43,7 @@
 
 ## 2.Get Mapping Value from a DID
 
-> 获取DID映射的内容
+> API: Get Mapping Value from a DID
 
 - Request
 
@@ -94,7 +98,7 @@
 
 ## 3.Get DID by mapping value (Reverse mapping value)
 
-> 获取反向映射
+> API: Get DID by mapping value
 
 - Request
 
@@ -140,7 +144,7 @@
 
 ## 4.Save Mapping value
 
-> 保存映射配置
+> API: Save Mapping value
 
 - Request
 
@@ -202,7 +206,7 @@
 
 ## 5.Authrize Mapping value
 
-> 对配置进行认证
+> API: Authrize Mapping value
 
 - Request
 

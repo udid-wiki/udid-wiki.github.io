@@ -68,6 +68,10 @@
                     symbol:'ETH',// optional
                     withdraw_value: 980050,// optional show value 
                   }
+                ],
+                signers:[
+                  '0xd792f2507df03f7335b8afc0527a4d2399',
+                  '0xd4D...863d',
                 ]
             },
             ...

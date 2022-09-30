@@ -10,6 +10,6 @@
   - [General specification](zh-tw/api-specification.md)
   - [DID list API](zh-tw/api-did-list.md)
   - [Multisignature API](zh-tw/api-multisignature.md)
-  - [DID Mapping Configuration](zh-tw/app-udid-mapping.md)
+  - [DID Mapping Configuration](zh-tw/app-udid-mapping-zh-tw.md)
 
 - [Contribution](zh-tw/contribution.md)

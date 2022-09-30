@@ -1,7 +1,7 @@
 <!-- span class="content-title"> Dns Accountant Contract</span -->
 # Dns Accountant Contract ABI
 1. Contract Address: 
-2. ABI file Name:
+2. ABI File: DnsAccountant.abi
 
 
 ## 1.Get income with payment

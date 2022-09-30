@@ -1,7 +1,7 @@
 <!-- span class="content-title"> Dns Cost Contract</span -->
 # Dns Cost Contract ABI
 1. Contract Address: 
-2. ABI file Name:
+2. ABI File:  DnsCost.abi
 
 
 ## 1.Set second level did price
@@ -139,7 +139,7 @@ function getSecondLevelNamePrice(bytes32 fatherHash_,address erc20Addr_,uint80 l
    1. bool: //valid or not
 
 
-   
+
    
 
 

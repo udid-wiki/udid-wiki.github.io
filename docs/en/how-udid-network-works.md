@@ -9,4 +9,4 @@
   7. Any DID minted in the UDID network is also an NFT and supports the transfer of NFTs in NFT exchanges.  
   8. After the name users in the UDID network are minted and expired, they will be renewed by other users and transferred to the paying users.  
   9. If you want to develop your own secondary name minting and selling, you can download our contract ABI from the following address.   
-     https://github.com/dnsdao
+     https://github.com/dnsdao/udidcontractabi

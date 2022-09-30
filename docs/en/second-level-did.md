@@ -1,6 +1,7 @@
 <!-- span class="content-title"> Second Level DID</span -->
 # Second Level DID Contract ABI
 1. Contract Address: 
+2. ABI File: DnsSecondLevelName.abi
 
 
 ## 1.Mint a second did

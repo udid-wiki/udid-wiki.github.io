@@ -186,7 +186,7 @@ https://dnsdao.udid.domains
                 owner:"0x...fe85",
                 card_color:0, // 卡片颜色 ： 0,1,2,3 对应合约 noColorCard,ColorCard,GoldColor,GreenColor
                 remaining_times: 1, // 剩余使用次数 备用，暂不返回,
-                has_used:0,// 0 未使用，1 已使用
+                status: 0, // 0 ready ,1: using,2: used
             },
             ...
         ]

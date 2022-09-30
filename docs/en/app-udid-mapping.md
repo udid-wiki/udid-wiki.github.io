@@ -1,7 +1,7 @@
 
 
 <!-- span class="content-title"> Support Mapping Type</span -->
-# Support Mapping Type List
+# Mapping API
 
 - There are 5 interfaces in this section, which are used for the mapping of configuration names in the udid network; the 4th and 5th interfaces are written interfaces, and the owner of the name is required to update the mapping.
 - The reverse mapping does not make a unique judgment on the fourth interface, mainly because there is no way to know whether the configured address belongs to the user itself.

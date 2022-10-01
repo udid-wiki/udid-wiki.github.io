@@ -245,7 +245,9 @@
 - 2. Configuration Content
 ```js
 {
-    "itemContent":"{\"name\":\"xx.did\",\"type\":\"eth\",\"value\":\"0x780f881b5f0EDf0CbA1F4baa4da697D0Bc3531b1\",\"timeStamp\":1663515687}","itemSig":"5c1413af84983caa9b9ef3619da8c07d10cf742356a607a1d63b706108e1295f032f85e8fec077f086abc8549485c8dc7eb65f9781c3f7ff53178c88fb3a489e00","timeStamp":1663515688,
+    "itemContent":"{\"name\":\"xx.did\",\"type\":\"eth\",\"value\":\"0x780f881b5f0EDf0CbA1F4baa4da697D0Bc3531b1\",\"timeStamp\":1663515687}",
+    "itemSig":"5c1413af84983caa9b9ef3619da8c07d10cf742356a607a1d63b706108e1295f032f85e8fec077f086abc8549485c8dc7eb65f9781c3f7ff53178c88fb3a489e00",
+    "timeStamp":1663515688,
     "userAddr":"0x9737100D2F42a196DE56ED0d1f6fF598a250E7E4",
     "operation":4
 }

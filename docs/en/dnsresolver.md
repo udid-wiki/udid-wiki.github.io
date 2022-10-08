@@ -2,7 +2,6 @@
 
 <!-- span class="content-title"> DID list API</span -->
 # DnsDao Resolver API  ALL
-https://dnsdao.udid.domains
 
 
 

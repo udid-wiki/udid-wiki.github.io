@@ -401,8 +401,8 @@
     tldName:'com',[required]
     pageSize:10,
     pageNumber:0,
-    minlen, 最小长度 
-    maxlen, 最大长度
+    minlen, 
+    maxlen, 
 }
 ```
 

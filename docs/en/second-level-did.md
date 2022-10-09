@@ -117,12 +117,13 @@ function MintSecondLevelNameBySig(string memory entireName_, uint8 year_, addres
    - the function will send a event, development should listen the event.
 
 ```js
-   event EvMintSecondLevelNameBySig(string entireName, 
-                uint8 year, 
-                address erc20Addr, 
-                uint256 nonce, 
-                uint256 price, 
-                uint256 tokenId);
+   event EvChargeSecondLevelNameBySig( bytes32 fatherHash, 
+                                       bytes32 nameHash, 
+                                       uint8 year, 
+                                       address erc20Addr,
+                                       uint256 nonce, 
+                                       uint256 price, 
+                                       bool isTransfer);
 ```
 
 

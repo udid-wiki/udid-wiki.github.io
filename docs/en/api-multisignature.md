@@ -146,6 +146,29 @@
 
 
 
+###  Multiple Signed Task Item Struct
 
+```js
+{
+  name:'job',
+  namehash:'0x5215306f9054ac36e458f583692c266e06ff1f335c1e70f99525c0471a2fa9bc',
+  owner:'0x02f...6990',
+  erc721Addr:'0x6d59a6121f23e27b98d8335a19b762f0b0490872',
+  administrators:['0x02f...6990','0x02f...6990','0x02f...556'],
+  tasks:[
+    {
+      taskHash:'0x6a0d80a5cdeb147e5c20d6383e474325c9b53e58d84163e3c254e9e9b6c49eb6',
+      max:3, // at lest signed count 
+      cnt:1,  // had signed
+      operators:['0x23...990'], //  getSignerSetAddress(address erc721Addr)
+      signerCount:3, // customze set count  
+      work :true,
+      lock :true
+
+    }
+  ]
+}
+
+```
 
 

@@ -2,7 +2,6 @@
 
 <!-- span class="content-title"> DID list API</span -->
 # DnsDao Resolver API  ALL
-https://dnsdao.udid.domains
 
 
 
@@ -11,7 +10,6 @@ https://dnsdao.udid.domains
 
 ## 1.Get my top level did list
 
-> 获取我的 Top level DID 列表
 
 - Request
 
@@ -21,7 +19,7 @@ https://dnsdao.udid.domains
 
 ```js
 {
-    coinbase:'0xAe..98c5', // required 必传
+    coinbase:'0xAe..98c5', // required
     pageSize:10,
     pageNumber:0
 }
@@ -31,21 +29,21 @@ https://dnsdao.udid.domains
 
 ```js
 {
-    code:1,  // 1 服务正常返回，0 服务端异常
-    message:'ok',// 异常时 描述
-    data:{  // 异常时 data null 或 无此字段
+    code:1,  
+    message:'ok',
+    data:{  
         total:32,
-        pageSize:10,   // 默认数量
-        pageNumber:0, //起始页默认0
+        pageSize:10,   
+        pageNumber:0, 
         items:[
             {
                 name:"udid",
-                erc721_addr:'0x67...98Fd', //
+                erc721_addr:'0x67...98Fd', 
                 token_id:1,
                 open_to_reg:true,
                 expire_time:219291131,
                 owner:'0x64....D865',
-                pay_tokens:['0x99d...dfed','0x00..00'], // 已开启的支付方式 ERC20 address 数组，未开启时 []或无此字段 
+                pay_tokens:['0x99d...dfed','0x00..00'], 
             },
             ...
         ]
@@ -57,7 +55,6 @@ https://dnsdao.udid.domains
 
 ## 2.Get my second level did list
 
-> 获取我的Second level DID 列表
 
 - Request
 
@@ -77,17 +74,17 @@ https://dnsdao.udid.domains
 
 ```js
 {
-    code:1,  // 1 服务正常返回，0 服务端异常
-    message:'ok',// 异常时 描述
-    data:{  // 异常时 data null 或 无此字段
+    code:1,  
+    message:'ok',
+    data:{  
         total:32,
         pageSize:10,
         pageNumber:0,
         items:[
             {
                 name:"lanbery.udid",
-                erc721_addr:'0x67...98Fd',// Top DID erc721addr [即 udid 的 erc721Addr]
-                token_id:1, // 二级域名本身 tokenId
+                erc721_addr:'0x67...98Fd',
+                token_id:1,
                 open_to_reg:false,
                 expire_time:219291131,
                 owner:'0x64....D865'
@@ -102,7 +99,6 @@ https://dnsdao.udid.domains
 
 ## 3.Get the top level did list of all secondary registration enabled
 
-> 获取所有已开启二级注册的 Top level DID 列表
 
 - Request
 
@@ -122,20 +118,20 @@ https://dnsdao.udid.domains
 
 ```js
 {
-    code:1,  // 1 服务正常返回，0 服务端异常
-    message:'ok',// 异常时 描述
-    data:{  // 异常时 data null 或 无此字段
+    code:1,
+    message:'ok',
+    data:{
         total:32,
         pageSize:10,
         pageNumber:0,
         items:[
             {
                 name:"lanbery.udid",
-                erc721_addr:'0x67...98Fd',// Top DID erc721addr [即 udid 的 erc721Addr]
+                erc721_addr:'0x67...98Fd',
                 token_id:1, //  tokenId
                 expire_time:219291131,
                 owner:'0x64....D865',
-                pay_tokens:['0x99d...dfed','0x00..00'], // 已开启的支付方式 ERC20 address 数组，未开启时 []或无此字段
+                pay_tokens:['0x99d...dfed','0x00..00'], 
 
             },
             ...
@@ -147,7 +143,6 @@ https://dnsdao.udid.domains
 
 ## 1. Get my Passcard list
 
-> 查询我持有的PassCard
 
 - Request
 
@@ -163,7 +158,7 @@ https://dnsdao.udid.domains
 ```js
 {
     coinbase:'0xAe..98c5', // required
-    collection:[''] //NFT 合约地址 备用
+    collection:[''] 
 }
 ```
 <!-- tabs:end -->
@@ -172,9 +167,9 @@ https://dnsdao.udid.domains
 
 ```js
 {
-    code:1,  // 1 服务正常返回，0 服务端异常
-    message:'ok',// 异常时 描述
-    data:{  // 异常时 data null 或 无此字段
+    code:1,  
+    message:'ok',
+    data:{  
         total:32, 
         pageSize:10,
         pageNumber:0,
@@ -184,8 +179,8 @@ https://dnsdao.udid.domains
                 erc721_addr:'0x67...98Fd', //
                 token_id:1,
                 owner:"0x...fe85",
-                card_color:0, // 卡片颜色 ： 0,1,2,3 对应合约 noColorCard,ColorCard,GoldColor,GreenColor
-                remaining_times: 1, // 剩余使用次数 备用，暂不返回,
+                card_color:0, 
+                remaining_times: 1, 
                 status: 0, // 0 ready ,1: using,2: used
             },
             ...
@@ -199,7 +194,6 @@ https://dnsdao.udid.domains
 ## 1. Signed for mint
 
 
-> 获取mint 签名
 
 
 - Request
@@ -291,7 +285,6 @@ https://dnsdao.udid.domains
 
 ## 1. Get Domains info
 
-> 查询域名信息
 
 - Request
 
@@ -354,7 +347,6 @@ https://dnsdao.udid.domains
 ```
 ## 2. Look up all the domain names in the address
 
-> 查地址下所有域名信息
 
 - Request
 
@@ -397,7 +389,6 @@ https://dnsdao.udid.domains
 ```
 ## 3. Check the subdomain information under the root domain name
 
-> 查根域名下的子域名信息
 
 - Request
 
@@ -410,8 +401,8 @@ https://dnsdao.udid.domains
     tldName:'com',[required]
     pageSize:10,
     pageNumber:0,
-    minlen, 最小长度 
-    maxlen, 最大长度
+    minlen, 
+    maxlen, 
 }
 ```
 
@@ -438,7 +429,6 @@ https://dnsdao.udid.domains
 
 ## 4. Check wallet address and root domain revenue summary
 
-> 查钱包地址及根域名的收入汇总
 
 - Request
 
@@ -475,7 +465,6 @@ https://dnsdao.udid.domains
 
 ## 5. Check the sum of character lengths of all subdomains in the root domain
 
-> 查根域名下所有子域名 各个字符长度的汇总值
 
 - Request
 
@@ -508,7 +497,6 @@ https://dnsdao.udid.domains
 
 ## 6. Single account withdrawal summary and details
 
-> 单个账户提现汇总及明细
 
 - Request
 
@@ -550,7 +538,6 @@ https://dnsdao.udid.domains
 
 ## 7. Summary of individual account income summary of root domain name and details of root domain name
 
-> 单个账户收入汇总 根域名汇总 及根域名明细
 
 - Request
 
@@ -735,7 +722,6 @@ https://dnsdao.udid.domains
 
 ## 8. List of domain names to be signed
 
-> 待签名域名列表
 
 - Request
 
@@ -796,7 +782,6 @@ https://dnsdao.udid.domains
 
 ## 9. Configure the domain name parser
 
-> 域名配置解析器
 
 - Request
 
@@ -882,7 +867,6 @@ https://dnsdao.udid.domains
 
 ## 1. Get Opensea metadata
 
-> 查询opensea元数据
 
 - Request
 

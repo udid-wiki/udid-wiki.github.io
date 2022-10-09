@@ -8,12 +8,15 @@
 - API documents
   - [DnsResolver API](en/dnsresolver.md)
 
+<!-- 
 - API Requirement (Website)
   - [General specification](en/api-specification.md)
   - [DID list API](en/api-did-list.md)
   - [Multisignature API](en/api-multisignature.md)
   - [PassCard NFT API](en/passcard-api.md)
   - [DID Mapping Configuration](en/app-udid-mapping.md)
+
+-->
 
 - Sell second-level domain names
 
